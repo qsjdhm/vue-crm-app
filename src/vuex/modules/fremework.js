@@ -3,7 +3,6 @@
  * @type {string}
  */
 
-import Vue from 'vue';
 
 
 
