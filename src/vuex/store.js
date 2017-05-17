@@ -9,7 +9,7 @@ import * as state from './state';
 import * as actions from './actions';
 import * as getters from './getters';
 
-
+import login from './modules/login';
 import fremework from './modules/fremework';
 
 
@@ -23,6 +23,7 @@ export default new Vuex.Store({
     actions,
     getters,
     modules: {
+        login,
         fremework,
     },
     strict: debug,

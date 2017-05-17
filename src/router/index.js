@@ -1,15 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
 
 Vue.use(Router)
 
+// 登录页面
+const Login                     = resolve => require(['../views/login'], resolve);
+
+
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Hello',
-      component: Hello
-    }
+    routes: [
+		{
+			path: '/',
+			name: 'Login',
+			component: Login
+		}
   ]
 })

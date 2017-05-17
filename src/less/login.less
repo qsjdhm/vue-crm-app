@@ -2,6 +2,56 @@
  *  登录页面样式
  */
 
+// 引入基础功能类
+@import './base.less';
+
 .login-page {
+	background-color: #f1f2f3;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-top: 10 / @frem;
+
+	.login-form {
+		background-color: #fff;
+
+		.logo-pack {
+			padding: 50 / @frem 0;
+
+			img {
+				width: 200 / @frem;
+				height: 80 / @frem;
+			}
+		}
+
+		.weui-cells:before {
+			border-top: 0px solid #D9D9D9;
+		}
+
+		.weui-label {
+			width: 80 / @frem!important;
+			text-align: left;
+		}
+	}
+
+	.login-button-pack {
+		padding: 20 / @frem 15 / @frem;
+
+		.weui-btn_default {
+			background-color: #4796ed;
+			color: #fff;
+		}
+		.weui-btn_default:active {
+			background-color: #3879d9;
+			color: #fff;
+		}
+
+		.weui-btn:after {
+			border: 0px solid #f1f2f3;
+		}
+	}
+
 
 }

@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { LoadingPlugin} from 'vux'
 
 Vue.config.productionTip = false
+
+Vue.use(LoadingPlugin)
 
 const FastClick = require('../static/fastclick/fastclick.js')
 FastClick.attach(document.body)
