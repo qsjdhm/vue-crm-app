@@ -33,8 +33,8 @@ const actions = {
 	[LOGIN_SYSTEM] (context, payload) {
 		return new Promise((resolve, reject) => {
 			resolve('登录成功');
-		})
-	},
+		});
+	}
 };
 
 // mutations
