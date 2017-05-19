@@ -14,19 +14,16 @@ const state  = {
     // tabbar数据列表
 	tabbarList : [
 		{
-			'id': 1, 'icon': 'fa-bar-chart', 'name': '首页', 'path' : '/home'
+			'id': 1, 'icon': 'fa-home', 'name': '首页', 'path' : '/home'
 		},
         {
-            'id': 2, 'icon': 'fa-bar-chart', 'name': '待办', 'badge': '2', 'path' : '/todo'
+            'id': 2, 'icon': 'fa-handshake-o', 'name': '拜访', 'path' : '/visit'
         },
         {
-            'id': 3, 'icon': 'fa-bar-chart', 'name': '通讯录', 'path' : '/address'
+            'id': 3, 'icon': 'fa-bar-chart', 'name': '业绩', 'path' : '/performance'
         },
         {
-            'id': 4, 'icon': 'fa-bar-chart', 'name': '设置', 'path' : '/settings'
-        },
-        {
-            'id': 5, 'icon': 'fa-bar-chart', 'name': '部门通讯录', 'path' : '/department'
+            'id': 4, 'icon': 'fa-user-o', 'name': '我的', 'path' : '/mine'
         }
     ],
     // 当前选中的tabbar

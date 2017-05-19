@@ -45,6 +45,13 @@
 				isLogin : false
             }
         },
+		computed: {
+			...mapState({
+				vpn : state => state.login.vpn,
+				password : state => state.login.password,
+				tel : state => state.login.tel,
+			}),
+		},
 		methods: {
 			vpnChange (newVpn) {
 				console.info(newVpn);
@@ -66,10 +73,13 @@
 				});
 
                 setTimeout(function() {
+					self.$vux.loading.show({
+						text: '登录中, 请稍候...'
+					});
                     self.$store.dispatch(LOGIN_SYSTEM).then(function(response){
+						self.$vux.loading.hide();
                         // 跳转到首页
-                        console.info(response);
-
+						self.$router.push({ path: '/f/home', params: { tel: '13912345678' }});
                     });
                 }, 1000);
 
@@ -78,13 +88,7 @@
 				console.info('登录');
 			}
 		},
-        computed: {
-            ...mapState({
-                vpn : state => state.login.vpn,
-                password : state => state.login.password,
-				tel : state => state.login.tel,
-            }),
-        },
+
     }
 </script>
 

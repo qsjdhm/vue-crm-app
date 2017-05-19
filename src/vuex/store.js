@@ -13,6 +13,9 @@ import login from './modules/login';
 import fremework from './modules/fremework';
 
 
+import '../../static/font-awesome-4.7.0/css/font-awesome.min.css';
+
+
 const debug = process.env.NODE_ENV !== 'production';
 
 Vue.use(Vuex);

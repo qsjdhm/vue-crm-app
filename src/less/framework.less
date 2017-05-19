@@ -1,28 +1,78 @@
 /**
- *  主框架界面样式（包含兼容eleme框架样式处理）
+ *  主框架界面样式（主要是tabbar）
  */
 
+// 引入基础功能类
+@import './base.less';
+
 .framework-page {
-	  padding: 0;
-	  margin: 0;
+    padding: 0;
+    margin: 0;
     width: 100%;
     overflow-x: hidden!important;
 
-    .weui-tabbar {
-        background-color: #fff;
+    .tabbar-pack {
+        height: 50 / @frem;
+        border-top: 1px solid #dfdfdf;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
-        .weui-tabbar__item {
-            padding: 7px 0 0;
+        .tabbar-item {
+            float: left;
+            width: 25%;
+            height: 50 / @frem;
 
-            .weui-tabbar__icon {
-                width: 15px;
-                height: 15px;
+
+            i {
+                display: block;
+                margin: 5 / @frem 0;
+                font-size: 20 / @frem;
+                color: #afafaf;
             }
 
-            .weui-tabbar__label {
-                margin: 5px 0;
+            span {
+                font-size: 10 / @frem;
+                color: #afafaf;
             }
         }
+
+        .checked i, .checked span {
+            color: #4b98ea;
+        }
+
+        .checked-animation {
+            animation:change 0.8s linear 1;
+            -moz-animation:change 0.8s linear 1;
+            -webkit-animation:change 0.8s linear 1;
+            -o-animation:change 0.8s linear 1;
+        }
+
+        @keyframes change {
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(180deg);}
+            100%{transform:rotateY(360deg);}
+        }
+
+        @-moz-keyframes change {
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(180deg);}
+            100%{transform:rotateY(360deg);}
+        }
+
+        @-webkit-keyframes change {
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(180deg);}
+            100%{transform:rotateY(360deg);}
+        }
+
+        @-o-keyframes change {
+            0%{transform:rotateY(0deg);}
+            50%{transform:rotateY(180deg);}
+            100%{transform:rotateY(360deg);}
+        }
+
     }
 
 }
