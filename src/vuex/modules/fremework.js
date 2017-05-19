@@ -17,7 +17,7 @@ const state  = {
 			'id': 1, 'icon': 'fa-home', 'name': '首页', 'path' : '/home'
 		},
         {
-            'id': 2, 'icon': 'fa-handshake-o', 'name': '拜访', 'path' : '/visit'
+            'id': 2, 'icon': 'fa-handshake-o', 'name': '拜访', 'badge' : '9', 'path' : '/visit'
         },
         {
             'id': 3, 'icon': 'fa-bar-chart', 'name': '业绩', 'path' : '/performance'

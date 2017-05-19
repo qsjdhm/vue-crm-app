@@ -9,6 +9,9 @@
 				 :key="key"
 				 :class="activeTabbar== item.id? 'checked' : ''"
 				 @click.stop.prevent="tabbarTrigger(item.id)">
+				<badge
+						v-if="item.badge!='0' && item.badge!=null"
+						:text="item.badge"></badge>
 				<i class="fa"
 				   :class="[item.icon, activeTabbar== item.id? 'checked-animation' : '']"
 				></i>
@@ -20,6 +23,7 @@
 
 <script type="text/ecmascript-6">
 
+	import { Badge } from 'vux';
 
     import { mapState } from 'vuex';
 
@@ -29,9 +33,9 @@
 
 
     export default {
-        components: {
-
-        },
+		components: {
+			Badge
+		},
         data: function () {
             return {
 
