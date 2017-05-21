@@ -9,5 +9,260 @@
     padding: 0;
     margin: 0;
 
+    .header {
+        display: -webkit-flex;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #4a98eb;
+
+        .avatar {
+            width: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            /* 垂直水平居中 */
+            align-items: center;
+            justify-content: center;
+
+            -webkit-transition : background-color 0.2s ease-in-out 0s;
+               -moz-transition : background-color 0.2s ease-in-out 0s;
+                 -ms-transform : background-color 0.2s ease-in-out 0s;
+                 -o-transition : background-color 0.2s ease-in-out 0s;
+                    transition : background-color 0.2s ease-in-out 0s;
+
+            img {
+                width: 30 / @frem;
+                height: 30 / @frem;
+                margin: 5 / @frem 0 0 5 / @frem;
+            }
+
+            i {
+                font-size: 18 / @frem;
+                color: #fff;
+            }
+        }
+
+        .avatar:active {
+            background-color: #2e87e6;
+        }
+
+        .title {
+            position: absolute;
+            left: 40 / @frem;
+            right: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            text-align: center;
+            color: #fff;
+            font-size: 18 / @frem;
+        }
+    }
+
+    .contents {
+        position: absolute;
+        top: 40 / @frem;
+        bottom: 50 / @frem;
+        left: 0;
+        right: 0;
+        padding-bottom: 20 / @frem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #f7f8fa;
+
+        .month-performance {
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            display: -webkit-flex;
+            display: flex;
+
+            div {
+                text-align: center;
+                font-size: 16 / @frem;
+            }
+
+            .value {
+                width: 60%;
+            }
+
+            .level {
+                width: 40%;
+
+                i {
+                    margin-right: 5 / @frem;
+                }
+            }
+        }
+
+        .work {
+
+            .work-header {
+                height: 30 / @frem;
+                line-height: 30 / @frem;
+                text-align: left;
+                padding-left: 10 / @frem;
+                background-color: #f7f8fa;
+            }
+
+            .work-contents {
+                background-color: #fff;
+
+                /* 去掉九宫格边框 */
+                .weui-grid__icon {
+                    width: 35 / @frem;
+                    height: 35 / @frem;
+                }
+                .weui-grids {
+                    border-bottom: 1px solid #eaeaea;
+                }
+                .weui-grids:before {
+                    border-top: 1px solid #eaeaea;
+                }
+                .weui-grid:after {
+                    border-bottom: 0px solid #eaeaea;
+                }
+                .weui-grids:after {
+                    border-left: 0px solid #eaeaea;
+                }
+                .weui-grid:before {
+                    border-right: 0px solid #eaeaea;
+                }
+            }
+        }
+
+        .client {
+            margin-top: 15 / @frem;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #fff;
+            display: -webkit-flex;
+            display: flex;
+
+            .vertical {
+                height: 120 / @frem;
+                width: 50%;
+                /* 垂直水平居中 */
+                align-items: center;
+                justify-content: center;
+            }
+
+            .crosswise {
+                display: -webkit-flex;
+                display: flex;
+
+                .img-pack {
+                    text-align: right;
+                    align-items: center;
+                    width: 40%;
+                    padding-right: 7 / @frem;
+                    padding-top: 6.5 / @frem;
+
+                    img {
+                        width: 45 / @frem;
+                        height: 45 / @frem;
+                    }
+                }
+
+                .value-pack {
+                    padding-left: 7 / @frem;
+                    text-align: left;
+                    align-items: center;
+                    width: 60%;
+
+                    div {
+                        height: 30 / @frem;
+                    }
+
+                    .value {
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            font-size: 20 / @frem;
+                            color: #f05637;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .label {
+                        font-size: 14 / @frem;
+                        color: #555;
+                    }
+                }
+            }
+            .crosswise:active {
+                background-color: #ececec;
+            }
+
+            .potential {
+                border-right: 1px solid #eaeaea;
+                display: -webkit-flex;
+                display: flex;
+
+                .img-pack {
+                    text-align: right;
+                    align-items: center;
+                    width: 40%;
+                    padding-right: 7 / @frem;
+
+                    img {
+                        width: 45 / @frem;
+                        height: 45 / @frem;
+                    }
+                }
+
+                .value-pack {
+                    padding-left: 7 / @frem;
+                    text-align: left;
+                    align-items: center;
+                    width: 60%;
+
+                    div {
+                        height: 60 / @frem;
+                    }
+
+                    .value {
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            font-size: 20 / @frem;
+                            color: #f05637;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .label {
+                        font-size: 15 / @frem;
+                        color: #555;
+                    }
+                }
+            }
+            .potential:active {
+                background-color: #ececec;
+            }
+
+            .order {
+                border-bottom: 1px solid #eaeaea;
+
+                span {
+                    color: #33A5F0!important;
+                }
+            }
+
+            .retain {
+
+                span {
+                    color: #febe2d!important;
+                }
+            }
+        }
+    }
 
 }

@@ -2,7 +2,7 @@
     <div class="login-page">
 		<div class="login-form">
 			<div class="logo-pack">
-				<img src="../assets/login_logo.png"/>
+				<img src="../../static/img/login_logo.png"/>
 			</div>
 			<group  class="weui-cells_form">
 				<x-input :disabled="isLogin" title="VPN账号" type="text" v-model="vpn" @on-change="vpnChange"></x-input>

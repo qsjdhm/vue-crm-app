@@ -12,6 +12,8 @@ import * as getters from './getters';
 import login from './modules/login';
 import fremework from './modules/fremework';
 
+import home from './modules/tabbar/home';
+
 
 import '../../static/font-awesome-4.7.0/css/font-awesome.min.css';
 
@@ -28,6 +30,8 @@ export default new Vuex.Store({
     modules: {
         login,
         fremework,
+
+		home
     },
     strict: debug,
     middlewares: middlewares,
