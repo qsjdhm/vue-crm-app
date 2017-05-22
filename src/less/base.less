@@ -15,3 +15,101 @@
 	width: auto!important;
 	padding: 0 10 / @frem;
 }
+
+// 左弹框样式
+/* 坐弹框-设置 */
+.settings-model {
+    background-color: #f7f8fa;
+
+    .setting-pack {
+        width: 260 / @frem;
+        border-top: 3px solid #4a98eb;
+
+        .user {
+            margin-top: 15 / @frem;
+            padding: 10 / @frem;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #fff;
+            display: -webkit-flex;
+            display: flex;
+
+            .img-pack {
+                width: 48 / @frem;
+                height: 48 / @frem;
+
+                img {
+                    width: 48 / @frem;
+                    height: 48 / @frem;
+                }
+            }
+
+            .info-pack {
+                padding-left: 7 / @frem;
+                text-align: left;
+                align-items: center;
+
+                div {
+                    height: 24 / @frem;
+                }
+
+                .name {
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        font-size: 15 / @frem;
+                        color: #f05637;
+                        font-weight: 500;
+                    }
+                }
+
+                .department {
+                    font-size: 14 / @frem;
+                    color: #555;
+                }
+            }
+        }
+
+        .business, .settings {
+            margin-top: 15 / @frem;
+            border-top: 1px solid #eaeaea;
+            background-color: #fff;
+
+            .item {
+                padding: 10 / @frem 15 / @frem;
+                height: 25 / @frem;
+                line-height: 25 / @frem;
+                font-size: 14 / @frem;
+                border-bottom: 1px solid #eaeaea;
+                position: relative;
+
+                i {
+                    color: #666;
+                    width: 20 / @frem;
+                }
+
+                .item-angle {
+                    position: absolute;
+                    right: 0;
+                    margin-top: 5 / @frem;
+                }
+            }
+            .item:active {
+                background-color: #ececec;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+    }
+}

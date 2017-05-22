@@ -24,7 +24,7 @@ const state  = {
 		{'name' : '其他',     'img' : 'work/其他.png',     'path' : '/aaa'}
 	],
 	// 潜在客户值
-	potential : 33,
+	potential : 108,
 	// 订单客户值
 	order : 16,
 	// 保有客户值

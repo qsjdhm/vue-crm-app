@@ -11,6 +11,59 @@
     width: 100%;
     overflow-x: hidden!important;
 
+    .header {
+        display: -webkit-flex;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #4a98eb;
+        z-index: 1;
+
+        .menus {
+            width: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            /* 垂直水平居中 */
+            align-items: center;
+            justify-content: center;
+
+            -webkit-transition : background-color 0.2s ease-in-out 0s;
+               -moz-transition : background-color 0.2s ease-in-out 0s;
+                 -ms-transform : background-color 0.2s ease-in-out 0s;
+                 -o-transition : background-color 0.2s ease-in-out 0s;
+                    transition : background-color 0.2s ease-in-out 0s;
+
+            img {
+                width: 30 / @frem;
+                height: 30 / @frem;
+                margin: 5 / @frem 0 0 5 / @frem;
+            }
+
+            i {
+                font-size: 18 / @frem;
+                color: #fff;
+            }
+        }
+
+        .avatar:active {
+            background-color: #2e87e6;
+        }
+
+        .title {
+            position: absolute;
+            left: 40 / @frem;
+            right: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            text-align: center;
+            color: #fff;
+            font-size: 18 / @frem;
+        }
+    }
+
     .tabbar-pack {
         height: 50 / @frem;
         border-top: 1px solid #dfdfdf;
@@ -59,25 +112,20 @@
             50%{transform:rotateY(180deg);}
             100%{transform:rotateY(360deg);}
         }
-
         @-moz-keyframes change {
             0%{transform:rotateY(0deg);}
             50%{transform:rotateY(180deg);}
             100%{transform:rotateY(360deg);}
         }
-
         @-webkit-keyframes change {
             0%{transform:rotateY(0deg);}
             50%{transform:rotateY(180deg);}
             100%{transform:rotateY(360deg);}
         }
-
         @-o-keyframes change {
             0%{transform:rotateY(0deg);}
             50%{transform:rotateY(180deg);}
             100%{transform:rotateY(360deg);}
         }
-
     }
-
 }

@@ -1,5 +1,13 @@
 <template>
     <div class="framework-page">
+        <div class="header">
+            <div @click.stop.prevent="openSettings" class="menus">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="title">
+                <span>中国普天集团本部</span>
+            </div>
+        </div>
         <keep-alive>
             <router-view></router-view>
         </keep-alive>
@@ -18,12 +26,70 @@
 				<span>{{item.name}}</span>
 			</div>
 		</div>
+
+        <!-- 设置 -->
+        <div v-transfer-dom>
+            <popup v-model="settingsModel" position="left" class="settings-model">
+                <div class="setting-pack">
+                    <div class="user">
+                        <div class="img-pack">
+                            <img src="../../static/img/user.png">
+                        </div>
+                        <div class="info-pack">
+                            <div class="name">
+                                <span>冯继超 - 部门经理</span>
+                            </div>
+                            <div class="department">集团 - 大客户服务事业部</div>
+                        </div>
+                    </div>
+                    <div class="business">
+                        <div class="item">
+                            <i class="fa fa-list-ul"></i>
+                            <span>本月销售任务</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa fa-phone"></i>
+                            <span>深度客户拜访列表</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa fa-hourglass-half"></i>
+                            <span>等待反馈列表</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa fa-bell-o"></i>
+                            <span>最新公告及新闻</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <div class="item">
+                            <i class="fa fa-meh-o"></i>
+                            <span>我的头像</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa fa-bell-o"></i>
+                            <span>系统设置</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                        <div class="item">
+                            <i class="fa fa-link"></i>
+                            <span>版本关于</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                    </div>
+                </div>
+            </popup>
+        </div>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
 
-	import { Badge } from 'vux';
+	import { Badge, TransferDom, Popup } from 'vux';
 
     import { mapState } from 'vuex';
 
@@ -33,12 +99,16 @@
 
 
     export default {
+        directives: {
+            TransferDom
+        },
 		components: {
-			Badge
+			Badge,
+            Popup
 		},
         data: function () {
             return {
-
+                settingsModel: false,
             }
         },
 		computed: {
@@ -48,6 +118,9 @@
 			}),
 		},
 		methods: {
+            openSettings () {
+                this.settingsModel = true;
+            },
 			tabbarTrigger (id) {
 				let self = this;
 				// 对比当前选中的是否和之前选中的是否一致
