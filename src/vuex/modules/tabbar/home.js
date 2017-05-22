@@ -10,7 +10,7 @@ const state  = {
     // 本月业绩
 	monthPerformance : {
 		'value' : 1532763,
-		'level' : 156
+		'level' : 16
 	},
 	// 我的工作
 	myWork : [

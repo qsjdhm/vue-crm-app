@@ -1,11 +1,22 @@
 <template>
     <div class="visit-page">
-		visit page
+		<div class="search-pack">
+			<div class="background-pack">
+				<i class="fa fa-search"></i>
+				<div class="input-pack">
+					<group class="weui-cells_form">
+						<x-input placeholder="搜索客户" type="text" v-model="keyword" @on-change="keywordChange"></x-input>
+					</group>
+				</div>
+			</div>
+		</div>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
 
+
+	import { XInput, Group } from 'vux';
 
     import { mapState } from 'vuex';
 
@@ -13,11 +24,16 @@
 		SET_ACTIVETABBAR
 	} from '../../vuex/modules/fremework';
 
+	// 引入此页面派发器
+	import {
+		SET_KEYWORD
+	} from '../../vuex/modules/tabbar/visit';
 
     export default {
-        components: {
-
-        },
+		components: {
+			XInput,
+			Group
+		},
         data: function () {
             return {
 
@@ -27,10 +43,15 @@
 			...mapState({
 				tabbarList: state => state.fremework.tabbarList,
 				activeTabbar: state => state.fremework.activeTabbar,
+
+				keyword : state => state.visit.keyword,
 			}),
 		},
 		methods: {
-
+			keywordChange (newKeyword) {
+				console.info(newKeyword);
+				this.$store.commit(SET_KEYWORD, newKeyword);
+			},
 		},
 		// 此生命周期挂载阶段还没开始，所以适用于修改父级dom和数据准备操作
 		created: function () {

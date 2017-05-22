@@ -20,6 +20,7 @@
 /* 坐弹框-设置 */
 .settings-model {
     background-color: #f7f8fa;
+    overflow-y: auto;
 
     .stripes {
         height: 4 / @frem;
@@ -32,6 +33,7 @@
     }
 
     .fill-pack {
+        position: fixed;
         background-color: #4a98eb;
         background-image: -webkit-gradient(linear, 0 100%, 100% 0,
         color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
@@ -95,6 +97,10 @@
                 .department {
                     font-size: 14 / @frem;
                     color: #555;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    -o-text-overflow: ellipsis;    /* Opera */
+                    text-overflow:    ellipsis;    /* IE, Safari (WebKit) */
                 }
             }
         }

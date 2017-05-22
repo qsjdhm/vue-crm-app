@@ -56,7 +56,7 @@
                         </div>
                         <div class="item">
                             <i class="fa fa-hourglass-half"></i>
-                            <span>等待反馈列表</span>
+                            <span>等待客户反馈列表</span>
                             <i class="fa fa-angle-right item-angle"></i>
                         </div>
                         <div class="item">
