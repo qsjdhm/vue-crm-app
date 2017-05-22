@@ -210,7 +210,6 @@
                     ]
                 };
 
-
                 // 使用刚指定的配置项和数据显示图表。
                 this.marketChart.setOption(option);
             }

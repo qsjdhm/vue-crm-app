@@ -13,7 +13,7 @@ const Framework            = resolve => require(['../views/framework'], resolve)
 const Home                 = resolve => require(['../views/tabbar/home'], resolve);
 const Visit                = resolve => require(['../views/tabbar/visit'], resolve);
 const Performance          = resolve => require(['../views/tabbar/performance'], resolve);
-const Mine                 = resolve => require(['../views/tabbar/mine'], resolve);
+const Task                 = resolve => require(['../views/tabbar/task'], resolve);
 
 
 
@@ -49,9 +49,9 @@ export default new Router({
 				},
 				{
 					meta: { id: 4 },
-					path: 'mine',
-					name: '我的',
-					component: Mine
+					path: 'task',
+					name: '任务',
+					component: Task
 				}
 			]
 		},

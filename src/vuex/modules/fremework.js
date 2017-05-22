@@ -23,7 +23,7 @@ const state  = {
             'id': 3, 'icon': 'fa-bar-chart', 'name': '业绩', 'path' : '/performance'
         },
         {
-            'id': 4, 'icon': 'fa-user-o', 'name': '我的', 'path' : '/mine'
+            'id': 4, 'icon': 'fa-tasks', 'name': '任务', 'path' : '/task'
         }
     ],
     // 当前选中的tabbar

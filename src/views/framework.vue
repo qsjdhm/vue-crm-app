@@ -30,6 +30,7 @@
         <!-- 设置 -->
         <div v-transfer-dom>
             <popup v-model="settingsModel" position="left" class="settings-model">
+                <div class="fill-pack stripes"></div>
                 <div class="setting-pack">
                     <div class="user">
                         <div class="img-pack">
@@ -37,9 +38,9 @@
                         </div>
                         <div class="info-pack">
                             <div class="name">
-                                <span>冯继超 - 部门经理</span>
+                                <span>张某某 - 部门经理</span>
                             </div>
-                            <div class="department">集团 - 大客户服务事业部</div>
+                            <div class="department">集团 - 大数据服务器事业部</div>
                         </div>
                     </div>
                     <div class="business">
@@ -78,6 +79,14 @@
                         <div class="item">
                             <i class="fa fa-link"></i>
                             <span>版本关于</span>
+                            <i class="fa fa-angle-right item-angle"></i>
+                        </div>
+                    </div>
+
+                    <div class="layout">
+                        <div class="item">
+                            <i class="fa fa-sign-out"></i>
+                            <span>退出当前账号</span>
                             <i class="fa fa-angle-right item-angle"></i>
                         </div>
                     </div>

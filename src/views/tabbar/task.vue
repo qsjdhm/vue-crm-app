@@ -1,6 +1,6 @@
 <template>
-    <div class="mine-page">
-		mine page
+    <div class="task-page">
+        task page
     </div>
 </template>
 
@@ -45,5 +45,5 @@
 </script>
 
 <style lang="less" >
-	@import '../../less/tabbar/mine.less';
+	@import '../../less/tabbar/task.less';
 </style>

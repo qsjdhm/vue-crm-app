@@ -101,31 +101,32 @@
         }
 
         .checked-animation {
-            animation:change 0.8s linear 1;
-            -moz-animation:change 0.8s linear 1;
-            -webkit-animation:change 0.8s linear 1;
-            -o-animation:change 0.8s linear 1;
+            animation:change 0.3s linear 1;
+            -moz-animation:change 0.3s linear 1;
+            -webkit-animation:change 0.3s linear 1;
+            -o-animation:change 0.3s linear 1;
         }
 
+        /* 缩小动画 */
         @keyframes change {
-            0%{transform:rotateY(0deg);}
-            50%{transform:rotateY(180deg);}
-            100%{transform:rotateY(360deg);}
+            0%{transform:scale(1,1)}
+            30%{transform:scale(0.4,0.4)}
+            100%{transform:scale(1,1)}
         }
         @-moz-keyframes change {
-            0%{transform:rotateY(0deg);}
-            50%{transform:rotateY(180deg);}
-            100%{transform:rotateY(360deg);}
+            0%{transform:scale(1,1)}
+            30%{transform:scale(0.4,0.4)}
+            100%{transform:scale(1,1)}
         }
         @-webkit-keyframes change {
-            0%{transform:rotateY(0deg);}
-            50%{transform:rotateY(180deg);}
-            100%{transform:rotateY(360deg);}
+            0%{transform:scale(1,1)}
+            30%{transform:scale(0.4,0.4)}
+            100%{transform:scale(1,1)}
         }
         @-o-keyframes change {
-            0%{transform:rotateY(0deg);}
-            50%{transform:rotateY(180deg);}
-            100%{transform:rotateY(360deg);}
+            0%{transform:scale(1,1)}
+            30%{transform:scale(0.4,0.4)}
+            100%{transform:scale(1,1)}
         }
     }
 }

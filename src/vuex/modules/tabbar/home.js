@@ -14,14 +14,14 @@ const state  = {
 	},
 	// 我的工作
 	myWork : [
-		{'name' : '销售任务', 'img' : 'work/销售任务.png', 'path' : '/aaa'},
-		{'name' : '拜访管理', 'img' : 'work/拜访管理.png', 'path' : '/aaa'},
-		{'name' : '信息协同', 'img' : 'work/信息协同.png', 'path' : '/aaa'},
-		{'name' : '数据看板', 'img' : 'work/数据看板.png', 'path' : '/aaa'},
-		{'name' : '信息录入', 'img' : 'work/信息录入.png', 'path' : '/aaa'},
-		{'name' : '企业BPM',  'img' : 'work/企业BPM.png', 'path' : '/aaa'},
-		{'name' : '企业邮箱', 'img' : 'work/企业邮箱.png', 'path' : '/aaa'},
-		{'name' : '其他',     'img' : 'work/其他.png',     'path' : '/aaa'}
+		{'name' : '销售任务', 'img' : 'work/销售任务.png', 'path' : '/f/task'},
+		{'name' : '拜访管理', 'img' : 'work/拜访管理.png', 'path' : '/f/home'},
+		{'name' : '信息协同', 'img' : 'work/信息协同.png', 'path' : '/f/task'},
+		{'name' : '数据看板', 'img' : 'work/数据看板.png', 'path' : '/f/home'},
+		{'name' : '信息录入', 'img' : 'work/信息录入.png', 'path' : '/f/task'},
+		{'name' : '企业BPM',  'img' : 'work/企业BPM.png', 'path' : '/f/home'},
+		{'name' : '企业邮箱', 'img' : 'work/企业邮箱.png', 'path' : '/f/task'},
+		{'name' : '其他',     'img' : 'work/其他.png',     'path' : '/f/home'}
 	],
 	// 潜在客户值
 	potential : 108,

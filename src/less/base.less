@@ -21,9 +21,36 @@
 .settings-model {
     background-color: #f7f8fa;
 
+    .stripes {
+        height: 4 / @frem;
+        width: 260 / @frem;
+        float: left;
+
+        -webkit-background-size: 10 / @frem 10 / @frem;
+        -moz-background-size: 10 / @frem 10 / @frem;
+        background-size: 10 / @frem 10 / @frem; /* 控制条纹的大小 */
+    }
+
+    .fill-pack {
+        background-color: #4a98eb;
+        background-image: -webkit-gradient(linear, 0 100%, 100% 0,
+        color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+        color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+        color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+        to(transparent));
+        background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+        background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+        transparent 75%, transparent);
+    }
+
     .setting-pack {
         width: 260 / @frem;
-        border-top: 3px solid #4a98eb;
 
         .user {
             margin-top: 15 / @frem;
@@ -72,7 +99,7 @@
             }
         }
 
-        .business, .settings {
+        .business, .settings, .layout {
             margin-top: 15 / @frem;
             border-top: 1px solid #eaeaea;
             background-color: #fff;
