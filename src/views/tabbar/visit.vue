@@ -5,7 +5,7 @@
 				<i class="fa fa-search"></i>
 				<div class="input-pack">
 					<group class="weui-cells_form">
-						<x-input placeholder="搜索客户" type="text" v-model="keyword" @on-change="keywordChange"></x-input>
+						<x-input placeholder="搜索拜访客户" type="text" v-model="keyword" @on-change="keywordChange"></x-input>
 					</group>
 				</div>
 			</div>
