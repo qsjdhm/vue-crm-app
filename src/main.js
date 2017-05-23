@@ -4,10 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { LoadingPlugin} from 'vux'
+import VueScroller from 'vue-scroller'
 
 Vue.config.productionTip = false
 
 Vue.use(LoadingPlugin)
+Vue.use(VueScroller)
+
 
 const FastClick = require('../static/fastclick/fastclick.js')
 FastClick.attach(document.body)

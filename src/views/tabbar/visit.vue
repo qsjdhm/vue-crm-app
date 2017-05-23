@@ -10,8 +10,13 @@
 				</div>
 			</div>
 		</div>
-        <div class="">
-
+        <div class="list-pack">
+            <scroller :on-infinite="infinite" ref="my_scroller">
+                <div v-for="(item, index) in items"
+                     class="row" :class="{'grey-bg': index % 2 == 0}">
+                    {{ item }}
+                </div>
+            </scroller>
         </div>
     </div>
 </template>
@@ -39,7 +44,7 @@
 		},
         data: function () {
             return {
-
+                items: []
             }
         },
 		computed: {
@@ -55,6 +60,24 @@
 				console.info(newKeyword);
 				this.$store.commit(SET_KEYWORD, newKeyword);
 			},
+            infinite(done) {
+                if (this.bottom >= 30) {
+                    setTimeout(() => {
+                        done(true)
+                    }, 1500)
+                    return;
+                }
+                setTimeout(() => {
+                    let start = this.bottom + 1
+                    for (let i = start; i < start + 10; i++) {
+                        this.items.push(i + ' - keep walking, be 2 with you.')
+                    }
+                    this.bottom = this.bottom + 10;
+                    setTimeout(() => {
+                        done()
+                    })
+                }, 1500)
+            }
 		},
 		// 此生命周期挂载阶段还没开始，所以适用于修改父级dom和数据准备操作
 		created: function () {
@@ -66,6 +89,13 @@
 				this.$store.commit(SET_ACTIVETABBAR, id);
 			}
 		},
+        mounted() {
+            for (let i = 1; i <= 20; i++) {
+                this.items.push(i + ' - keep walking, be 2 with you.')
+            }
+            this.top = 1
+            this.bottom = 20
+        },
 
     }
 </script>
