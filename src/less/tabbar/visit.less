@@ -13,8 +13,7 @@
     right: 0;
     padding: 0 0 15 / @frem 0;
     margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     background-color: #f7f8fa;
 
     .search-pack {
@@ -75,16 +74,71 @@
     }
 
     .list-pack {
-        position: relative;
-        top: 0 / @frem;
+        position: absolute;
+        top: 45 / @frem;
+        bottom: 0;
         margin-top: 15 / @frem;
-        height: 100%;
         left: 0;
         right: 0;
+        border-top: 1px solid #eaeaea;
+        background-color: #fff;
 
-        .row {
-            height: 80 / @frem;
+        .client {
+            border-bottom: 1px solid #eaeaea;
+            height: 60 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+
+            .img-pack {
+                text-align: right;
+                align-items: center;
+                width: 45 / @frem;
+                padding: 0 15 / @frem;
+
+                img {
+                    width: 45 / @frem;
+                    height: 45 / @frem;
+                }
+            }
+
+            .value-pack {
+                padding-left: 7 / @frem;
+                text-align: left;
+                align-items: center;
+
+                div {
+                    height: 30 / @frem;
+                }
+
+                .value {
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        bottom: 0;
+                        padding-bottom: 2 / @frem;
+                        font-size: 16 / @frem;
+                        color: #f05637;
+                    }
+                }
+
+                .label {
+                    font-size: 15 / @frem;
+                    color: #555;
+                    padding-top: 2 / @frem;
+
+                    .company {
+                        margin-right: 15 / @frem;
+                    }
+                }
+            }
         }
+        .client:active {
+            background-color: #ececec;
+        }
+
+
     }
 
 }

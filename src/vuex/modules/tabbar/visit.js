@@ -14,6 +14,9 @@ export const SET_KEYWORD        = 'visit/SET_KEYWORD';
 // state
 const state  = {
     keyword : '',
+	clientList : [
+
+	]
 };
 
 // getters
