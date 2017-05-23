@@ -13,7 +13,7 @@ export const SET_KEYWORD        = 'visit/SET_KEYWORD';
 
 // state
 const state  = {
-    keyword : '中国普天',
+    keyword : '',
 };
 
 // getters
