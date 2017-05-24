@@ -1,0 +1,213 @@
+/**
+ *  拜访界面样式 - 详情
+ */
+
+// 引入基础功能类
+@import '../base.less';
+
+.visit-details-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 15 / @frem 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f7f8fa;
+
+    .header {
+        display: -webkit-flex;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #4a98eb;
+        z-index: 1;
+
+        .back {
+            width: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            /* 垂直水平居中 */
+            align-items: center;
+            justify-content: center;
+
+            -webkit-transition : background-color 0.2s ease-in-out 0s;
+               -moz-transition : background-color 0.2s ease-in-out 0s;
+                 -ms-transform : background-color 0.2s ease-in-out 0s;
+                 -o-transition : background-color 0.2s ease-in-out 0s;
+                    transition : background-color 0.2s ease-in-out 0s;
+
+            i {
+                font-size: 25 / @frem;
+                color: #fff;
+            }
+        }
+
+        .back:active {
+            background-color: #2e87e6;
+        }
+
+        .title {
+            position: absolute;
+            left: 40 / @frem;
+            right: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            text-align: center;
+            color: #fff;
+            font-size: 18 / @frem;
+        }
+    }
+
+    .business-card {
+        position: absolute;
+        top: 40 / @frem;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+        height: 100 / @frem;
+
+        .company, .visit, .linkman {
+
+            text-align: left;
+            padding: 0 15 / @frem;
+        }
+
+        .company {
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+
+            .name {
+                font-size: 18 / @frem;
+                color: #f05637;
+            }
+
+            .intention {
+                float: right;
+                height: 40 / @frem;
+                line-height: 40 / @frem;
+                display: -webkit-flex;
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 20 / @frem!important;
+                    color: #fc6;
+                    margin-right: 5 / @frem;
+                }
+            }
+        }
+
+        .visit, .linkman {
+            height: 30 / @frem;
+            line-height: 30 / @frem;
+            display: -webkit-flex;
+            display: flex;
+
+            div {
+                /* 垂直水平居中 */
+                align-items: center;
+                justify-content: center;
+            }
+
+            .name {
+                width: 40%;
+            }
+
+            .time {
+                width: 40%;
+            }
+
+            .tel {
+                width: 50%;
+            }
+
+            .img-pack {
+                width: 10%;
+            }
+
+            .level {
+                width: 60%;
+            }
+
+            i {
+                color: #777;
+                margin-right: 7 / @frem;
+            }
+
+            span {
+                font-size: 13 / @frem;
+
+            }
+
+            img {
+                width: 22 / @frem;
+                height: 22 / @frem;
+            }
+        }
+    }
+
+    .padding-pack {
+        position: absolute;
+        top: 140 / @frem;
+        left: 0;
+        right: 0;
+        height: 10 / @frem;
+    }
+
+    .tab-pack {
+        position: absolute;
+        top: 150 / @frem;
+        left: 0;
+        right: 0;
+
+        .vux-tab {
+            height: 44 / @frem;
+        }
+
+    }
+
+    .swiper-pack {
+        position: absolute;
+        top: 194 / @frem;
+        left: 0;
+        right: 0;
+        background: #fff;
+
+        .vux-swiper {
+            background-color: #f7f8fa;
+        }
+
+        .details-list {
+
+            .item {
+                height: 40 / @frem;
+                line-height: 40 / @frem;
+                border-bottom: 1px solid #eaeaea;
+                background-color: #fff;
+                display: -webkit-flex;
+                display: flex;
+                padding: 0 15 / @frem;
+
+                div {
+                    width: 50%;
+                }
+
+                .item-label {
+                    color: #333;
+                    text-align: left;
+                }
+
+                .item-value {
+                    color: #999;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

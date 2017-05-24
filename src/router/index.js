@@ -15,6 +15,8 @@ const Visit                = resolve => require(['../views/tabbar/visit'], resol
 const Performance          = resolve => require(['../views/tabbar/performance'], resolve);
 const Task                 = resolve => require(['../views/tabbar/task'], resolve);
 
+// 拜访详情
+const visitDetails         = resolve => require(['../views/visit/details'], resolve);
 
 
 export default new Router({
@@ -55,5 +57,10 @@ export default new Router({
 				}
 			]
 		},
+        {
+            path: '/visitDetails/:detailsId',
+            name: '拜访详情',
+            component: visitDetails,
+        },
   ]
 })
