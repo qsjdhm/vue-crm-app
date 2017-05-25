@@ -48,13 +48,103 @@
         <div class="padding-pack"></div>
         <div class="tab-pack">
             <tab v-model="tabIndex" :line-width="2" bar-active-color="#4a98eb" active-color="#4a98eb" defaultColor="#999">
-                <tab-item selected>详情</tab-item>
                 <tab-item>拜访记录</tab-item>
+                <tab-item>详情</tab-item>
                 <tab-item>任务安排</tab-item>
             </tab>
         </div>
         <div class="swiper-pack">
             <swiper v-model="tabIndex" :height="swiperHeight" :show-dots="false">
+                <swiper-item >
+                    <div class="tab-swiper vux-center">
+                        <div class="visit-list" :style="{ height : swiperHeight }">
+                            <div class="item">
+                                <div class="date">
+                                    <i class="fa fa-circle"></i>2016-06-13
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">王西瓜</div>
+                                        <div class="name-value">DRC2601</div>
+                                    </div>
+                                    <div class="tel">
+                                        <div class="tel-label">13912345678</div>
+                                        <div class="tel-value">意向产品</div>
+                                    </div>
+                                    <div class="type">
+                                        <div class="type-label"><i class="fa fa-location-arrow"></i>现场拜访</div>
+                                        <div class="type-value">10 : 00</div>
+                                    </div>
+                                    <div class="result">
+                                        预约来总部考察产品实力
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">王西瓜</div>
+                                        <div class="name-value">DRC2601, DRC-H2201</div>
+                                    </div>
+                                    <div class="tel">
+                                        <div class="tel-label">13912345678</div>
+                                        <div class="tel-value">意向产品</div>
+                                    </div>
+                                    <div class="type">
+                                        <div class="type-label"><i class="fa fa-phone"></i>电话沟通</div>
+                                        <div class="type-value">11 : 00</div>
+                                    </div>
+                                    <div class="result">
+                                        预约本部工程师实现POC
+                                    </div>
+                                    <div class="result">
+                                        客户相对比较中意我们产品，主要是对产品稳定性和配套服务有更高的要求。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="date">
+                                    <i class="fa fa-circle"></i>2016-06-06
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">王西瓜</div>
+                                        <div class="name-value">DRC2601</div>
+                                    </div>
+                                    <div class="tel">
+                                        <div class="tel-label">13912345678</div>
+                                        <div class="tel-value">意向产品</div>
+                                    </div>
+                                    <div class="type">
+                                        <div class="type-label"><i class="fa fa-phone"></i>现场拜访</div>
+                                        <div class="type-value">10 : 00</div>
+                                    </div>
+                                    <div class="result">
+                                        预约来总部考察产品实力
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">王西瓜</div>
+                                        <div class="name-value">DRC2601, DRC-H2201</div>
+                                    </div>
+                                    <div class="tel">
+                                        <div class="tel-label">13912345678</div>
+                                        <div class="tel-value">意向产品</div>
+                                    </div>
+                                    <div class="type">
+                                        <div class="type-label"><i class="fa fa-phone"></i>电话沟通</div>
+                                        <div class="type-value">11 : 00</div>
+                                    </div>
+                                    <div class="result">
+                                        预约来总部考察产品实力
+                                    </div>
+                                    <div class="result">
+                                        客户说比较忙, 暂时抽不出时间过来, 下次再约。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-item>
                 <swiper-item >
                     <div class="tab-swiper vux-center">
                         <div class="details-list">
@@ -82,18 +172,6 @@
                                 <div class="item-label">渠道等级</div>
                                 <div class="item-value">一级渠道</div>
                             </div>
-
-                        </div>
-                    </div>
-                </swiper-item>
-                <swiper-item >
-                    <div class="tab-swiper vux-center">
-                        <div class="visit-list">
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-
                         </div>
                     </div>
                 </swiper-item>
@@ -169,9 +247,6 @@
             },
             goBack () {
                 this.$router.push({ path: '/f/visit', params: { tel: '13912345678' }});
-            },
-            onItemClick (index) {
-
             }
 		},
 		// 此生命周期挂载阶段还没开始，所以适用于修改父级dom和数据准备操作
@@ -184,14 +259,13 @@
             // 初始化全部数据
             this.generateAllItems();
 
+            // 设置swiper的高度
             let pageHeight = document.querySelector('.visit-details-page').offsetHeight;
             let barHeight = document.querySelector('.header').offsetHeight;
             let cardHeight = document.querySelector('.business-card').offsetHeight;
             let paddingHeight = document.querySelector('.padding-pack').offsetHeight;
             let tabHeight = document.querySelector('.tab-pack').offsetHeight;
-
             this.swiperHeight = (pageHeight - barHeight - cardHeight - paddingHeight - tabHeight) + 'px';
-            console.info(this.swiperHeight);
         },
 
     }

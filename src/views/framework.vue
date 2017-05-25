@@ -5,7 +5,7 @@
                 <i class="fa fa-bars"></i>
             </div>
             <div class="title">
-                <span>中国普天集团本部</span>
+                <span>曙光信息产业股份有限公司</span>
             </div>
         </div>
         <keep-alive>

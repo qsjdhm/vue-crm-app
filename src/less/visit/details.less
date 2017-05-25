@@ -183,6 +183,112 @@
             background-color: #f7f8fa;
         }
 
+        .visit-list {
+            overflow-y: auto;
+
+            .item {
+                text-align: left;
+                padding: 10 / @frem 10 / @frem 0 10 / @frem;
+
+                .date {
+                    color: #666;
+                    margin-bottom: 10 / @frem;
+
+                    i {
+                        margin-right: 5 / @frem;
+                        color: #7ab8f9;
+                    }
+                }
+
+                .content {
+                    background-color: #fff;
+                    margin-bottom: 10 / @frem;
+                    padding: 10 / @frem;
+
+                    .name {
+                        height: 20 / @frem;
+                        line-height: 20 / @frem;
+                        display: -webkit-flex;
+                        display: flex;
+                        font-size: 15 / @frem;
+
+                        div {
+                            width: 50%;
+                        }
+
+                        .name-label {
+                            color: #333;
+                            text-align: left;
+                        }
+
+                        .name-value {
+                            color: #333;
+                            text-align: right;
+                        }
+                    }
+
+                    .tel {
+                        height: 20 / @frem;
+                        line-height: 20 / @frem;
+                        display: -webkit-flex;
+                        display: flex;
+                        font-size: 11 / @frem;
+                        padding-bottom: 5 / @frem;
+                        border-bottom: 1px solid #eaeaea;
+
+                        div {
+                            width: 50%;
+                        }
+
+                        .tel-label {
+                            color: #333;
+                            text-align: left;
+                        }
+
+                        .tel-value {
+                            color: #333;
+                            text-align: right;
+                        }
+                    }
+
+                    .type {
+                        height: 20 / @frem;
+                        line-height: 20 / @frem;
+                        display: -webkit-flex;
+                        display: flex;
+                        font-size: 15 / @frem;
+                        margin-top: 5 / @frem;
+
+                        div {
+                            width: 50%;
+                        }
+
+                        .type-label {
+                            color: #333;
+                            text-align: left;
+
+                            i {
+                                color: #777;
+                                margin-right: 7 / @frem;
+                            }
+                        }
+
+                        .type-value {
+                            color: #999;
+                            font-size: 11 / @frem;
+                            text-align: right;
+                        }
+                    }
+
+                    .result {
+                        line-height: 20 / @frem;
+                        font-size: 11 / @frem;
+                        color: #777;
+                    }
+                }
+            }
+        }
+
         .details-list {
 
             .item {

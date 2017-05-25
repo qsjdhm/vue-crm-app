@@ -88,7 +88,7 @@
                     if (i %2 == 0) {
                         this.allItems.push({
                             'id' : i,
-                            'icon' : '../../../static/img/client-logo/inspur.jpg',
+                            'icon' : './static/img/client-logo/inspur.jpg',
                             'name' : '李某某'+i,
                             'company' : '山东浪潮集团',
                             'level': '采购部经理',
@@ -97,7 +97,7 @@
                     } else {
                         this.allItems.push({
                             'id' : i,
-                            'icon' : '../../../static/img/client-logo/topsec.jpg',
+                            'icon' : './static/img/client-logo/topsec.jpg',
                             'name' : '刘某某'+i,
                             'company' : '北京天融信',
                             'level': '华北区副总裁',

@@ -227,7 +227,7 @@
 			},
 			// 格式化图片路径
 			formatImgPath (path) {
-				return '../../static/img/'+path;
+				return ''+path;
 			}
 		},
 		// 此生命周期挂载阶段还没开始，所以适用于修改父级dom和数据准备操作
