@@ -147,7 +147,7 @@
                 </swiper-item>
                 <swiper-item >
                     <div class="tab-swiper vux-center">
-                        <div class="details-list">
+                        <div class="details-list" :style="{ height : swiperHeight }">
                             <div class="item">
                                 <div class="item-label">客户编号</div>
                                 <div class="item-value">KH20166025002</div>
@@ -177,18 +177,44 @@
                 </swiper-item>
                 <swiper-item >
                     <div class="tab-swiper vux-center">
-                        <div class="task-list">
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-                            asdsadbasdha<br/>
-
+                        <div class="task-list" :style="{ height : swiperHeight }">
+                            <div class="item">
+                                <div class="date">
+                                    <i class="fa fa-circle"></i>9 : 30 - 11 : 30
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">部署部门销售任务</div>
+                                        <div class="name-value">
+                                            <span class="completed">已解决</span>
+                                        </div>
+                                    </div>
+                                    <div class="result">
+                                        对新人任务量进行考核、评审。
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="date">
+                                    <i class="fa fa-circle"></i>13 : 30 - 16 : 30
+                                </div>
+                                <div class="content">
+                                    <div class="name">
+                                        <div class="name-label">与联想、戴尔开会商讨销售策略</div>
+                                        <div class="name-value">
+                                            <span class="unfinished">未解决</span>
+                                        </div>
+                                    </div>
+                                    <div class="result">
+                                        必须以我们为核心，严格控制价格，利用价格形成统一。
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </swiper-item>
             </swiper>
         </div>
-
     </div>
 </template>
 
