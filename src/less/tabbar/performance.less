@@ -17,5 +17,181 @@
     overflow-y: auto;
     background-color: #f7f8fa;
 
+    /* 销售图表 */
+    .market {
+        background-color: #fff;
+        border-bottom: 1px solid #eaeaea;
+
+        .market-header {
+            height: 30 / @frem;
+            line-height: 30 / @frem;
+            text-align: left;
+            padding-left: 10 / @frem;
+
+            span {
+                color: #4b98ea;
+            }
+        }
+
+        .market-contents {
+            border-top: 1px solid #eaeaea;
+            height: 200 / @frem;
+        }
+
+        .market-footer {
+            height: 60 / @frem;
+            display: -webkit-flex;
+            display: flex;
+
+            .average, .plan {
+                width: 50%;
+
+                .pack {
+
+                    .label {
+                        position: relative;
+                        height: 30 / @frem;
+                        padding-left: 50 / @frem;
+                        text-align: left;
+
+                        span {
+                            position: absolute;
+                            bottom: 0;
+                            color: #999;
+                        }
+                    }
+
+                    .value {
+                        padding-left: 50 / @frem;
+                        text-align: left;
+                        font-weight: 500;
+                        font-size: 15 / @frem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sale {
+        background-color: #fff;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        margin-top: 10 / @frem;
+
+        .sale-header {
+            height: 30 / @frem;
+            line-height: 30 / @frem;
+            text-align: left;
+            padding-left: 10 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 16 / @frem;
+                height: 16 / @frem;
+                margin-right: 10 / @frem;
+            }
+
+            span {
+                align-items: center;
+            }
+        }
+
+        .sale-contents {
+            border-top: 1px solid #eaeaea;
+
+            .sales, .saleroom {
+                margin: 0 10 / @frem;
+                padding: 10 / @frem 0;
+
+                .value {
+                    font-size: 18 / @frem;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    div {
+                        width: 33.33%;
+                    }
+                }
+
+                .label {
+                    font-size: 13 / @frem;
+                    color: #777;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    div {
+                        width: 33.33%;
+                    }
+                }
+            }
+
+            .sales {
+                border-bottom: 1px solid #eaeaea;
+            }
+        }
+    }
+
+    .visit {
+        background-color: #fff;
+        border-top: 1px solid #eaeaea;
+        border-bottom: 1px solid #eaeaea;
+        margin-top: 10 / @frem;
+
+        .visit-header {
+            height: 30 / @frem;
+            line-height: 30 / @frem;
+            text-align: left;
+            padding-left: 10 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 16 / @frem;
+                height: 16 / @frem;
+                margin-right: 10 / @frem;
+            }
+
+            span {
+                align-items: center;
+            }
+        }
+
+        .visit-contents {
+            border-top: 1px solid #eaeaea;
+
+            .client, .shop {
+                margin: 0 10 / @frem;
+                padding: 10 / @frem 0;
+
+                .value {
+                    font-size: 18 / @frem;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    div {
+                        width: 33.33%;
+                    }
+                }
+
+                .label {
+                    font-size: 13 / @frem;
+                    color: #777;
+                    display: -webkit-flex;
+                    display: flex;
+
+                    div {
+                        width: 33.33%;
+                    }
+                }
+            }
+
+            .client {
+                border-bottom: 1px solid #eaeaea;
+            }
+        }
+    }
 
 }
