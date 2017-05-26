@@ -17,5 +17,82 @@
     overflow-y: auto;
     background-color: #f7f8fa;
 
+    .padding-pack {
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 10 / @frem;
+    }
+
+    .weui-cells {
+        margin-top: 0!important;
+        height: 40 / @frem;
+
+        a:hover {
+            text-decoration: inherit!important;
+        }
+
+        .vux-datetime {
+
+            p {
+                font-size: 16 / @frem;
+            }
+
+            .vux-datetime-value {
+                font-size: 16 / @frem;
+            }
+        }
+    }
+
+    .tab-pack {
+        position: absolute;
+        top: 60 / @frem;
+        left: 0;
+        right: 0;
+
+        .vux-tab {
+            height: 44 / @frem;
+        }
+
+    }
+
+    .swiper-pack {
+        position: absolute;
+        top: 104 / @frem;
+        left: 0;
+        right: 0;
+        background: #fff;
+
+        .vux-swiper {
+            background-color: #f7f8fa;
+        }
+
+        .gather-list, .demand-list, .indent-list {
+            overflow-y: auto;
+
+            .item {
+                text-align: left;
+                padding: 10 / @frem 10 / @frem 0 10 / @frem;
+
+                .date {
+                    color: #666;
+                    margin-bottom: 10 / @frem;
+
+                    i {
+                        margin-right: 5 / @frem;
+                        color: #7ab8f9;
+                    }
+                }
+
+                .content {
+                    background-color: #fff;
+                    margin-bottom: 10 / @frem;
+                    padding: 10 / @frem;
+
+
+                }
+            }
+        }
+    }
 
 }

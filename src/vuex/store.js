@@ -14,6 +14,7 @@ import fremework from './modules/fremework';
 
 import home from './modules/tabbar/home';
 import visit from './modules/tabbar/visit';
+import task from './modules/tabbar/task';
 
 
 import '../../static/font-awesome-4.7.0/css/font-awesome.min.css';
@@ -33,7 +34,8 @@ export default new Vuex.Store({
         fremework,
 
 		home,
-		visit
+		visit,
+        task
     },
     strict: debug,
     middlewares: middlewares,

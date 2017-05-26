@@ -223,6 +223,12 @@
     import { Tab, TabItem, Swiper, SwiperItem  } from 'vux';
 
     export default {
+        components: {
+            Tab,
+            TabItem,
+            Swiper,
+            SwiperItem
+        },
         data: function () {
             return {
                 allItems: [],  // 所有的数据，供每次下拉加载会从这里取数据
@@ -231,12 +237,6 @@
                 tabIndex: 0,  // 通过它吧tab和swiper当前选中的链接起来
                 swiperHeight: '',
             }
-        },
-        components: {
-            Tab,
-            TabItem,
-            Swiper,
-            SwiperItem
         },
 		methods: {
             // 初始化全部数据
