@@ -52,8 +52,11 @@
 
         .vux-tab {
             height: 44 / @frem;
-        }
 
+            .vux-tab-item {
+                line-height: 44 / @frem;
+            }
+        }
     }
 
     .swiper-pack {
@@ -89,7 +92,59 @@
                     margin-bottom: 10 / @frem;
                     padding: 10 / @frem;
 
+                    .task-name {
+                        line-height: 35 / @frem;
+                        font-size: 16 / @frem;
+                        border-bottom: 1px solid #eaeaea;
+                    }
 
+                    .state {
+                        margin-top: 7 / @frem;
+                        height: 30 / @frem;
+                        line-height: 30 / @frem;
+                        display: -webkit-flex;
+                        display: flex;
+
+                        div {
+                            width: 50%;
+                            font-size: 16 / @frem;
+
+
+                            /* 任务的几个状态 */
+                            .not-begun {
+                                color: #f08388;
+                                border-radius: 5 / @frem;
+                            }
+
+                            .unfinished {
+                                color: #7ab8f9;
+                                border-radius: 5 / @frem;
+                            }
+
+                            .completed {
+                                color: #ffcc66;
+                                border-radius: 5 / @frem;
+                            }
+
+                            .value {
+                                height: 25 / @frem;
+                                line-height: 25 / @frem;
+                                padding: 3 / @frem 8 / @frem;
+                            }
+                        }
+                    }
+
+                    .time {
+                        height: 30 / @frem;
+                        line-height: 30 / @frem;
+                        display: -webkit-flex;
+                        display: flex;
+
+                        div {
+                            width: 50%;
+                            font-size: 16 / @frem;
+                        }
+                    }
                 }
             }
         }

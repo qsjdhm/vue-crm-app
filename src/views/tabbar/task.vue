@@ -26,7 +26,59 @@
                                 <div class="content"
                                      v-for="(taskItem, taskKey) in item"
                                      :key="taskKey">
-                                    {{taskItem}}
+                                    <div class="task-name">
+                                        <span class="value">
+                                            {{taskItem.name}}
+                                        </span>
+                                    </div>
+                                    <div class="state">
+                                        <div class="task-priority">
+                                            <span class="label">
+                                                优先级 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.priority==0">
+                                                严重
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.priority==1">
+                                                紧急
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.priority==2">
+                                                重要
+                                            </span>
+                                        </div>
+                                        <div class="task-state">
+                                            <span class="label">
+                                                状态 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.state==0">
+                                                未开始
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.state==1">
+                                                解决中
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.state==2">
+                                                已完成
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="time">
+                                        <div class="task-initiator">
+                                            <span class="label">
+                                                发起人 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.initiator}}
+                                            </span>
+                                        </div>
+                                        <div class="task-time-scope">
+                                            <span class="label">
+                                                预估时间 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.timeScope}}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +96,59 @@
                                 <div class="content"
                                      v-for="(taskItem, taskKey) in item"
                                      :key="taskKey">
-                                    {{taskItem}}
+                                    <div class="task-name">
+                                        <span class="value">
+                                            {{taskItem.name}}
+                                        </span>
+                                    </div>
+                                    <div class="state">
+                                        <div class="task-priority">
+                                            <span class="label">
+                                                优先级 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.priority==0">
+                                                严重
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.priority==1">
+                                                紧急
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.priority==2">
+                                                重要
+                                            </span>
+                                        </div>
+                                        <div class="task-state">
+                                            <span class="label">
+                                                状态 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.state==0">
+                                                未开始
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.state==1">
+                                                解决中
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.state==2">
+                                                已完成
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="time">
+                                        <div class="task-initiator">
+                                            <span class="label">
+                                                发起人 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.initiator}}
+                                            </span>
+                                        </div>
+                                        <div class="task-time-scope">
+                                            <span class="label">
+                                                预估时间 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.timeScope}}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +166,59 @@
                                 <div class="content"
                                      v-for="(taskItem, taskKey) in item"
                                      :key="taskKey">
-                                    {{taskItem}}
+                                    <div class="task-name">
+                                        <span class="value">
+                                            {{taskItem.name}}
+                                        </span>
+                                    </div>
+                                    <div class="state">
+                                        <div class="task-priority">
+                                            <span class="label">
+                                                优先级 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.priority==0">
+                                                严重
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.priority==1">
+                                                紧急
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.priority==2">
+                                                重要
+                                            </span>
+                                        </div>
+                                        <div class="task-state">
+                                            <span class="label">
+                                                状态 :
+                                            </span>
+                                            <span class="value not-begun" v-if="taskItem.state==0">
+                                                未开始
+                                            </span>
+                                            <span class="value unfinished" v-if="taskItem.state==1">
+                                                解决中
+                                            </span>
+                                            <span class="value completed" v-if="taskItem.state==2">
+                                                已完成
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="time">
+                                        <div class="task-initiator">
+                                            <span class="label">
+                                                发起人 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.initiator}}
+                                            </span>
+                                        </div>
+                                        <div class="task-time-scope">
+                                            <span class="label">
+                                                预估时间 :
+                                            </span>
+                                            <span class="value">
+                                                {{taskItem.timeScope}}
+                                            </span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
