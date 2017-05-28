@@ -97,11 +97,6 @@
 
 	import { Grid, GridItem } from 'vux';
 
-    let echarts = require('echarts/lib/echarts');
-    require('echarts/lib/chart/bar');
-    require('echarts/lib/component/grid');
-    require('echarts/lib/component/legend');
-
     import { mapState } from 'vuex';
 
 	import {
@@ -138,7 +133,7 @@
 			},
             initChart () {
                 // 基于准备好的dom，初始化echarts实例
-                this.marketChart = echarts.init(document.getElementById('marketChart'));
+                this.marketChart = this.$echarts.init(document.getElementById('marketChart'));
                 let option = {
                     legend: {
                         padding: 8,

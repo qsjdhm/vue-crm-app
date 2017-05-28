@@ -240,6 +240,10 @@
 		SET_ACTIVETABBAR
 	} from '../../vuex/modules/fremework';
 
+	import {
+		TIME_CHANGE
+	} from '../../vuex/modules/tabbar/task';
+
 
     export default {
         components: {
@@ -270,7 +274,8 @@
 		},
 		methods: {
             timeChange (value) {
-                console.log('change', value)
+            	// 组件初始化会调这个事件，从数据集取出符合时间的数值切换
+				this.$store.dispatch(TIME_CHANGE, {time: value});
             },
 		},
 		// 此生命周期挂载阶段还没开始，所以适用于修改父级dom和数据准备操作
