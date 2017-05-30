@@ -1,0 +1,198 @@
+/**
+ *  拜访界面样式 - 详情
+ */
+
+// 引入基础功能类
+@import '../base.less';
+
+.applications-page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 0 15 / @frem 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #f7f8fa;
+
+    .header {
+        display: -webkit-flex;
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #4a98eb;
+        z-index: 1;
+
+        .back {
+            width: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            display: -webkit-flex;
+            display: flex;
+            /* 垂直水平居中 */
+            align-items: center;
+            justify-content: center;
+
+            -webkit-transition : background-color 0.2s ease-in-out 0s;
+               -moz-transition : background-color 0.2s ease-in-out 0s;
+                 -ms-transform : background-color 0.2s ease-in-out 0s;
+                 -o-transition : background-color 0.2s ease-in-out 0s;
+                    transition : background-color 0.2s ease-in-out 0s;
+
+            i {
+                font-size: 25 / @frem;
+                color: #fff;
+            }
+        }
+
+        .back:active {
+            background-color: #2e87e6;
+        }
+
+        .title {
+            position: absolute;
+            left: 40 / @frem;
+            right: 40 / @frem;
+            height: 40 / @frem;
+            line-height: 40 / @frem;
+            text-align: center;
+            color: #fff;
+            font-size: 18 / @frem;
+        }
+    }
+
+    .applications-list {
+        position: absolute;
+        top: 40 / @frem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+
+        .item {
+
+            .stair-item {
+                border-bottom: 1px solid #eaeaea;
+                position: relative;
+                display: -webkit-flex;
+                display: flex;
+
+                .img-pack {
+                    width: 40 / @frem;
+                    height: 45 / @frem;
+                    margin-left: 10 / @frem;
+
+                    display: -webkit-flex;
+                    display: flex;
+                    /* 垂直居中 */
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 30 / @frem;
+                        height: 30 / @frem;
+                    }
+                }
+
+                .name-pack {
+                    position: absolute;
+                    left: 50 / @frem;
+                    right: 40 / @frem;
+                    height: 45 / @frem;
+                    margin-left: 10 / @frem;
+
+                    display: -webkit-flex;
+                    display: flex;
+                    /* 垂直水平居中 */
+                    align-items: center;
+
+                    span {
+                        font-size: 15 / @frem;
+                    }
+                }
+
+                .arrows-pack {
+                    position: absolute;
+                    right: 0;
+                    width: 40 / @frem;
+                    height: 45 / @frem;
+                    margin-right: 20 / @frem;
+
+                    display: -webkit-flex;
+                    display: flex;
+                    /* 垂直居中 */
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    i {
+                        font-size: 16 / @frem;
+                        color: #999;
+                    }
+
+                    .active {
+                        -webkit-transform: rotate(90deg);/*Safari 4+,Google Chrome 1+  */
+                        -moz-transform: rotate(90deg);/*Firefox 3.5+*/
+                        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);/*ie*/
+                    }
+                }
+            }
+            .stair-item:active {
+                background-color: #ececec;
+            }
+
+            .sub-app-pack {
+
+                .sub-item {
+                    border-bottom: 1px solid #eaeaea;
+                    position: relative;
+                    overflow: hidden;
+                    padding-left: 50 / @frem;
+
+                    .name-pack {
+                        height: 45 / @frem;
+                        margin-left: 10 / @frem;
+                        float: left;
+
+                        display: -webkit-flex;
+                        display: flex;
+                        /* 垂直水平居中 */
+                        align-items: center;
+
+                        span {
+                            font-size: 15 / @frem;
+                        }
+                    }
+
+                    .arrows-pack {
+                        width: 40 / @frem;
+                        height: 45 / @frem;
+                        margin-right: 20 / @frem;
+                        float: right;
+
+                        display: -webkit-flex;
+                        display: flex;
+                        /* 垂直居中 */
+                        align-items: center;
+                        justify-content: flex-end;
+
+                        i {
+                            font-size: 16 / @frem;
+                            color: #999;
+                        }
+                    }
+                }
+                .sub-item:active {
+                    background-color: #ececec;
+                }
+            }
+
+
+
+
+        }
+
+
+    }
+}

@@ -15,8 +15,10 @@ const Visit                = resolve => require(['../views/tabbar/visit'], resol
 const Performance          = resolve => require(['../views/tabbar/performance'], resolve);
 const Task                 = resolve => require(['../views/tabbar/task'], resolve);
 
+// 更多应用
+const Applications         = resolve => require(['../views/home/applications'], resolve);
 // 拜访详情
-const visitDetails         = resolve => require(['../views/visit/details'], resolve);
+const VisitDetails         = resolve => require(['../views/visit/details'], resolve);
 
 
 export default new Router({
@@ -57,10 +59,16 @@ export default new Router({
 				}
 			]
 		},
+		{
+
+			path: '/applications',
+			name: '更多应用',
+			component: Applications,
+		},
         {
             path: '/visitDetails/:detailsId',
             name: '拜访详情',
-            component: visitDetails,
+            component: VisitDetails,
         },
   ]
 })

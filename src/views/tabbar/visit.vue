@@ -155,7 +155,6 @@
 		created: function () {
 			// 打开此view应该设置顶部菜单和子级菜单的选中状态
 			const id = this.$route.meta.id;
-            console.info(id);
 			// 如果路由中当前页面的state中的选中菜单不同需要设置菜单和与之对应的当前页面id
 			if (this.activeTabbar !== id) {
 				this.$store.commit(SET_ACTIVETABBAR, id);
